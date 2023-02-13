@@ -1,5 +1,8 @@
 body{
     text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Manrope', sans-serif;
 }
 
 .body-container{
@@ -12,8 +15,58 @@ body{
     overflow: hidden;
 }
 
+.body-container p{
+    max-width: 900px;
+    text-align: center;
+}
+
 
 #profile-pic{
     width: 800px;
     margin: -40px 0 0 -230px;
+}
+
+
+#navbar {
+    background-color: #C24914;
+    color: #F9E0AE;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    height: fit-content;
+}
+
+ #pages-container, #social-media-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#pages-container li, #social-media-container li{
+    margin: 0px 15px;
+}
+
+#navbar > * a {
+    text-decoration: none;
+}
+
+#navbar > * a:visited {
+    color: #F9E0AE;
+}
+
+#navbar > * a:hover {
+    cursor: pointer;
+}
+
+.navbar-list ul {
+    list-style-type: none;
+}
+
+#home-container{
+    display: flex;
+    align-items: center;
 }
